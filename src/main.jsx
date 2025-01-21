@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import About from "./pages/About.jsx";
 import RootLayout from "./components/layouts/RootLayout.jsx";
 import Service from "./pages/Service.jsx";
+import ProductDetails from "./pages/ProductDetails.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/" element={<App />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>
